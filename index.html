@@ -6,99 +6,113 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Restaurant</title>
     <link href="https://fonts.googleapis.com/css?family=Lora|Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/style.css">
     
 </head>
 <body>
 
     <header class="header">
-        <div class="wrapper header__wrapper">
 
-            <nav class="nav">
+        <div class="wrapper">
 
-                <div class="logo">
-                    <h2 class="sectionHeading sectionHeading--white">Restaurant</h2>
-                </div>
+            <div class="headerContainer">
 
-                <ul class="navBar">
-                    <li class="navBar__item">
-                        <a href="#" class="navBar__link">Home</a>  
-                    </li>
-                    <li class="navBar__item">
-                        <a href="#" class="navBar__link">Menu</a>
-                    </li>
-                    <li class="navBar__item">
-                        <a href="#" class="navBar__link">Blog</a>
-                    </li>
-                    <li class="navBar__item">
-                        <a href="#" class="navBar__link">Contact</a>
-                    </li>
-                    <li class="navBar__item">
-                        <a href="#" class="navBar__link">About Us</a>
-                    </li>
-                </ul> <!-- navBar ENDS -->
+                <nav class="nav">
 
-            </nav> <!-- nav ENDS -->
-            <div class="welcome">
-                <h1 class="heading">Welcome</h1>
-                <h3 class="subheading subheading--white subheading--leftAlign">To my restaurant website</h3>
-                <button class="button">
-                    <h4 class="button__text">Start</h4>
-                </button>
-            </div> <!-- welcome ENDS -->
+                    <div class="logo">
+                        <h2 class="sectionHeading sectionHeading--white">Restaurant</h2>
+                    </div>
+                    
+                    <label for="checkbox"><i class="hamburger fas fa-bars"></i></label>
+                    <input id="checkbox" type="checkbox" class="checkbox--visuallyHidden">
+
+                    <ul class="navBar">
+                        <li class="navBar__item">
+                            <a href="#" class="navBar__link">Home</a>  
+                        </li>
+                        <li class="navBar__item">
+                            <a href="#" class="navBar__link">Menu</a>
+                        </li>
+                        <li class="navBar__item">
+                            <a href="#" class="navBar__link">Blog</a>
+                        </li>
+                        <li class="navBar__item">
+                            <a href="#" class="navBar__link">Contact</a>
+                        </li>
+                        <li class="navBar__item">
+                            <a href="#" class="navBar__link">About Us</a>
+                        </li>
+                    </ul> <!-- navBar ENDS -->
+
+                </nav> <!-- nav ENDS -->
+                <div class="welcomeMessage">
+                    <h1 class="heading">Welcome</h1>
+                    <h3 class="subheading subheading--white subheading--leftAlign subheading--centerAlign">To my restaurant website</h3>
+                    <button class="button">
+                        <h4 class="button__text">Start</h4>
+                    </button>
+                </div> <!-- welcome ENDS -->
+
+            </div> <!-- headerContainer ENDS -->
+
         </div> <!-- wrapper ENDS -->
     </header>
 
     <main>
         <section class="identity">
             
-            <div class="wrapper wrapper--flexed">
+            <div class="wrapper">
+                
+                <h2 class="sectionHeading sectionHeading--displayNone">We are...</h2> 
+                
+                <div class="identityContainer">
 
-                <h2 class="sectionHeading">We are...</h2>
+                    <div class="identityGallery">
+                        
+                        <div class="identityItem">
+                            <div class="identityItem__image">
+                                <img src="assets/image-2.jpeg" alt="">
+                            </div>
+                            <h3 class="subheading">Local</h3>
+                        </div> <!-- identityItem ENDS -->
+                        
+                        <div class="identityItem">
+                            <div class="identityItem__image">
+                                <img src="assets/image-3.jpeg" alt="">
+                            </div>
+                            <h3 class="subheading">Modern</h3>
+                        </div> <!-- identityItem ENDS -->
+                        
+                        <div class="identityItem">
+                            <div class="identityItem__image">
+                                <img src="assets/image-4.jpeg" alt="">
+                            </div>
+                            <h3 class="subheading">Friendly</h3>
+                        </div> <!-- identityItem ENDS -->
+                        
+                        <div class="identityItem">
+                            <div class="identityItem__image">
+                                <img src="assets/image-5.jpeg" alt="">
+                            </div>
+                            <h3 class="subheading">Delicious</h3>
+                        </div> <!-- identityItem ENDS -->
+                        
+                    </div> <!-- identityGallery ENDS -->
                 
-                <div class="identityGallery">
-                    
-                    <div class="identityItem">
-                        <div class="identityItem__image">
-                            <img src="assets/image-2.jpeg" alt="">
-                        </div>
-                        <h3 class="subheading">Local</h3>
-                    </div> <!-- identityItem ENDS -->
-                    
-                    <div class="identityItem">
-                        <div class="identityItem__image">
-                            <img src="assets/image-3.jpeg" alt="">
-                        </div>
-                        <h3 class="subheading">Modern</h3>
-                    </div> <!-- identityItem ENDS -->
-                    
-                    <div class="identityItem">
-                        <div class="identityItem__image">
-                            <img src="assets/image-4.jpeg" alt="">
-                        </div>
-                        <h3 class="subheading">Friendly</h3>
-                    </div> <!-- identityItem ENDS -->
-                    
-                    <div class="identityItem">
-                        <div class="identityItem__image">
-                            <img src="assets/image-5.jpeg" alt="">
-                        </div>
-                        <h3 class="subheading">Delicious</h3>
-                    </div> <!-- identityItem ENDS -->
-                    
-                </div> <!-- identityGallery ENDS -->
+                    <div class="identityInfo">
+                        
+                        <div class="textBlock">
+                            <h3 class="subheading">About Us</h3>
+                            <p class="textBlock__content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic dignissimos est qui minus molestiae eum maxime iure omnis sequi quod.</p>
+                            <button class="button">
+                                <h4 class="button__text">More</h4>
+                            </button>
+                        </div> <!-- textBlock ENDS -->
+                        
+                    </div> <!-- identifyInfo ENDS -->
                 
-                <div class="identityInfo">
-                    
-                    <div class="textBlock">
-                        <h3 class="subheading">About Us</h3>
-                        <p class="textBlock__content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic dignissimos est qui minus molestiae eum maxime iure omnis sequi quod.</p>
-                        <button class="button">
-                            <h4 class="button__text">More</h4>
-                        </button>
-                    </div> <!-- textBlock ENDS -->
-                    
-                </div> <!-- identifyInfo ENDS -->
+                </div> <!-- identityContainer ENDS -->
                 
             </div> <!-- identity wrapper ENDS -->
             
@@ -106,11 +120,11 @@
 
         <section class="welcome">
 
+            
             <div class="wrapper">
-
-                
+            
                 <h2 class="sectionHeading">Welcome to Restaurant</h2>
-                
+         
                 <div class="textBlock">
                     <p class="textBlock__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam error dolorem, sapiente nulla id tempore exercitationem qui quae explicabo molestias porro provident totam. Recusandae modi consectetur maxime dolores cum nobis, eligendi</p>
                     <button class="button">
@@ -119,31 +133,31 @@
                 </div>
             </div>
                 
-        </section> <!-- welcome ENDS -->
+        </section> <!-- welcomeMessage ENDS -->
 
         <section class="services">
-
+        
             <div class="wrapper">
-
+                
                 <h2 class="sectionHeading">Services</h2>
                 
                 <div class="serviceType">
+                    <div class="serviceType__image">
+                        <img src="assets/image-6.jpeg" alt="">
+                    </div>
                     <div class="textBlock textBlock--float">
                         <h3 class="subheading">Custom Catering</h3>
                         <p class="textBlock__content textBlock__content--small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga dolor facilis blanditiis atque culpa, neque veritatis minus deleniti commodi rerum id nostrum voluptates est nihil, veniam quis enim saepe laborum?</p>
                     </div>
-                    <div class="serviceType__image">
-                        <img src="assets/image-6.jpeg" alt="">
-                    </div>
                 </div>
                 
                 <div class="serviceType serviceType--second">
+                    <div class="serviceType__image">
+                        <img src="assets/image-7.jpeg" alt="">
+                    </div>
                     <div class="textBlock textBlock--float">
                         <h3 class="subheading">Event Bookings</h3>
                         <p class="textBlock__content textBlock__content--small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga dolor facilis blanditiis atque culpa, neque veritatis minus deleniti commodi rerum id nostrum voluptates est nihil, veniam quis enim saepe laborum?</p>
-                    </div>
-                    <div class="serviceType__image">
-                        <img src="assets/image-7.jpeg" alt="">
                     </div>
                 </div>
                 
@@ -177,19 +191,101 @@
 
         <section class="ask">
             <h2 class="sectionHeading">Ask a question</h2>
-            <button class="button">
-                <h4 class="button__text">View</h4>
-            </button>
+            <form class="ask__form" action="POST">
+                <label for="message"></label>
+                <input type="textarea" id="message" placeholder="Your Message" class="message">
+                <button type="submit"class="button">
+                    <h4 class="button__text">Send</h4>
+                </button>
+            </form>
+            
         </section> <!-- ask ENDS -->
 
         <section class="stats">
+
+            <div class="wrapper">
+                <div class="statsContainer">
+
+                    <div class="stat">
+                        <i class="stat__icon fas fa-check-square"></i>
+                        <p class="stat__number">16</p>
+                        <p class="stat__fact">Years Open</p>
+                    </div>
+
+                    <div class="stat">
+                        <i class="stat__icon fas fa-smile"></i>
+                        <p class="stat__number">180</p>
+                        <p class="stat__fact">Happy Customers</p>
+                    </div>
+
+                    <div class="stat">
+                        <i class="stat__icon fas fa-calendar"></i>
+                        <p class="stat__number">12</p>
+                        <p class="stat__fact">World Class Cooks</p>
+                    </div>
+
+                    <div class="stat">
+                        <i class="stat__icon fas fa-trophy"></i>
+                        <p class="stat__number">55</p>
+                        <p class="stat__fact">Awards</p>
+                    </div>
+             
+                </div> <!-- statsContainer ENDS -->
+
+                <div class="statsListContainer">
+                    <ul class="statsList">
+                        <li class="statsList__item">
+                            <i class="stat__icon fas fa-check-square"></i>
+                            <p class="stat__fact">16 Years Open</p>
+                        </li>
+                        <li class="statsList__item">
+                            <i class="stat__icon fas fa-smile"></i>
+                            <p class="stat__fact">180 Happy Customers</p>
+                        </li>
+                        <li class="statsList__item">
+                            <i class="stat__icon fas fa-calendar"></i>
+                            <p class="stat__fact">World Class Cooks</p>
+                        </li>
+                        <li class="statsList__item">
+                            <i class="stat__icon fas fa-trophy"></i>
+                            <p class="stat__fact">55 Awards</p>
+                        </li>
+                    </ul>
+                </div>
+            </div> <!-- wrapper ENDS -->
         </section> <!-- stats ENDS -->
 
         <section class="blog">
+
+            <div class="wrapper">
+                
+                <h2 class="sectionHeading">Our Blog</h2>
+                <div class="blogPostContainer">
+
+                    <div class="blogPost clearfix">
+                        <img src="assets/image-12.jpeg" alt="" class="blogPost__image">
+                        <p class="blogPost__title">Popular Steak Cuts</p>
+                        <p class="textBlock__content--small textBlock__content--hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem vel minus saepe fuga id tempore aliquam accusantium nemo sint iure.</p>
+                        <a href="#" class="blogPost__link">Read More</a>
+                    </div>
+                    <div class="blogPost blogPost--floatRight clearfix">
+                        <img src="assets/image-13.jpeg" alt="" class="blogPost__image blogPost__image--floatRight">
+                        <p class="blogPost__title blogPost__title--floatRight">Popular Steak Cuts</p>
+                        <a href="#" class="blogPost__link blogPost__link--floatRight">Read More</a>
+                    </div>
+                    <div class="blogPost clearfix">
+                        <img src="assets/image-14.jpeg" alt="" class="blogPost__image">
+                        <p class="blogPost__title">Popular Steak Cuts</p>
+                        <a href="#" class="blogPost__link">Read More</a>
+                    </div>
+                    
+                </div>
+            </div> <!-- blog wrapper ENDS -->
+            
         </section> <!-- blog ENDS -->
     </main>
 
-    <footer>
+    <footer class="footer">
     </footer>
     
 </body>

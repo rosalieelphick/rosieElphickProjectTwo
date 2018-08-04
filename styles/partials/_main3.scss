@@ -1,0 +1,137 @@
+// STATS
+
+.statsContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.statsListContainer {
+    display: none; 
+}
+
+.stats {
+    background-color: lightgrey;
+}
+.stat {
+    flex-basis: 25%;
+    text-align: center;
+}
+
+.stat__icon {
+    font-size: 4rem;
+}
+
+.stat__number {
+    font-size: 2.8rem;
+    margin: 0;
+}
+
+.stat__fact {
+    font-family: $serifFont;
+    font-size: 2.4rem;
+    margin: 0;
+}
+
+//BLOG 
+
+.blogPostContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.blogPost {
+    flex-basis: calc(33.33% - 10px);
+}
+
+.textBlock__content--hidden {
+    float: left;
+    width: 50%;
+    padding-left: 10px;
+    // display: none;
+}
+
+.blogPost__title {
+    font-size: 2rem;
+}
+
+.blogPost__link {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: inherit;
+}
+
+.blogPost__link::after {
+    content: " >>";
+}
+
+@media (max-width: 1000px) {
+
+    .statsContainer {
+        display: none;
+    }
+
+    .statsListContainer {
+        display: block; 
+        text-align: center;
+    }
+
+    .statsList {
+        list-style: none;
+        padding-left: 0;
+    }
+
+    .statsList__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .stat__fact {
+        font-family: $baseFont;
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        padding-left: 10px;
+    }
+
+    .stat__icon {
+        font-size: 2rem;
+    }
+
+    // BLOG
+
+    .blogPost {
+        flex-basis: 100%;
+        margin: 10px 0;
+    }
+
+    .blogPost__image {
+        width: 50%;
+        float: left;
+    }
+
+    .blogPost__title,
+    .blogPost__link {
+        width: 50%;
+        float: left;
+        padding-left: 10px;
+    }
+
+    .blogPost__image--floatRight {
+        float: right;
+    }
+
+    .blogPost__title--floatRight,
+    .blogPost__link--floatRight {
+        float: right;
+        width: 50%;
+        text-align: right;
+        padding-right: 10px;
+    }
+
+    .textBlock--content--hidden {
+        padding-left: 10px;
+        display: block;
+    }
+
+}
