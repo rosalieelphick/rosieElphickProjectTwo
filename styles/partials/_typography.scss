@@ -1,10 +1,16 @@
 $baseFont: 'Raleway', sans-serif;
 $serifFont: 'Lora', serif;
+$yellow: #e5bf4b;
+$darkGrey: #2a2a2a;
+$buttonRed: #da331d;
+$textGrey: #d2cfcf;
 
 html {
     // font-size: 62.5%;
     font-size: 55%;
     font-family: $baseFont;
+    color: $darkGrey;
+    font-weight: 400;
 }
 
 img {
@@ -34,19 +40,31 @@ section {
 // h2
 .sectionHeading {
     font-size: 4rem;
+    font-weight: 600;
     text-transform: uppercase;
-    margin: 0;
+    margin-bottom: 50px;
     text-align: center;
     width: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 .sectionHeading--white {
     color: white;
 }
 
+.sectionHeading--grey {
+    color: $textGrey;
+}
+
+.sectionHeading--noMargin {
+    margin: 0;
+}
+
 // h3 
 .subheading {
     font-size: 2.6rem;
+    font-weight: 600;
     text-transform: uppercase;
     margin: 0;
     text-align: center;
@@ -63,24 +81,56 @@ section {
 
 .button {
     border: none;
-    background-color: tomato;
+    background-color: $buttonRed;
     border-radius: 40px;
     display: inline;
     width: 20rem;
+    transition: all 0.4s;
+    border: solid 2px $buttonRed;
+    &:hover {
+        border: solid 2px $darkGrey;
+        box-shadow: inset 0px 0px 10px 1px #c02713;
+        & > .button__text {
+            font-weight: 600;
+            letter-spacing: 2px;
+        }  
+    }
 }
+
+
+.button--grey {
+    background-color: $darkGrey;
+    border: solid 2px $darkGrey;
+    &:hover {
+        border: solid 2px white;
+        box-shadow: inset 0px 0px 12px 1px black;
+        & > .button__text {
+            font-weight: 600;
+            letter-spacing: 2px;
+        } 
+    }
+}
+
+.button--whiteBorder:hover {
+    border: solid 2px white;
+    box-shadow: inset 0px 0px 10px 1px #c02713;
+}
+
 
 // h4
 .button__text {
     font-size: 2rem;
+    font-weight: 400;
     text-transform: uppercase;
     padding: 1rem 3rem;
     margin: 0;
     color: white;
+    transition: all 0.4s;
 }
 
 .textBlock {
     text-align: center;
-    padding: 30px;
+    // padding: 30px;
 }
 
 // p
@@ -98,6 +148,10 @@ section {
 //
 .textBlock__content--white {
     color: white;
+}
+
+.textBlock__content--grey {
+    color: $textGrey;
 }
 
 

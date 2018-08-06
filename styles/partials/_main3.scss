@@ -10,8 +10,9 @@
 }
 
 .stats {
-    background-color: lightgrey;
+    background-color: $yellow;
 }
+
 .stat {
     flex-basis: 25%;
     text-align: center;

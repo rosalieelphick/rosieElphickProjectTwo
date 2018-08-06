@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Restaurant</title>
-    <link href="https://fonts.googleapis.com/css?family=Lora|Raleway:400,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora|Raleway:400,600,800" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/style.css">
     
@@ -21,11 +21,21 @@
                 <nav class="nav">
 
                     <div class="logo">
-                        <h2 class="sectionHeading sectionHeading--white">Restaurant</h2>
+                        <h2 class="sectionHeading sectionHeading--white sectionHeading--noMargin">Restaurant</h2>
                     </div>
                     
-                    <label for="checkbox"><i class="hamburger fas fa-bars"></i></label>
                     <input id="checkbox" type="checkbox" class="checkbox--visuallyHidden">
+
+                    <label for="checkbox" class="hamburgerLabel">
+
+                        <!-- <i class="hamburger fas fa-bars"></i> -->
+                        <div class="hamburger">
+                            <span class="bar bar1"></span>
+                            <span class="bar bar2"></span>
+                            <span class="bar bar3"></span>
+                            <span class="bar bar4"></span>
+                        </div>
+                    </label>
 
                     <ul class="navBar">
                         <li class="navBar__item">
@@ -49,7 +59,7 @@
                 <div class="welcomeMessage">
                     <h1 class="heading">Welcome</h1>
                     <h3 class="subheading subheading--white subheading--leftAlign subheading--centerAlign">To my restaurant website</h3>
-                    <button class="button">
+                    <button class="button button--whiteBorder">
                         <h4 class="button__text">Start</h4>
                     </button>
                 </div> <!-- welcome ENDS -->
@@ -120,14 +130,13 @@
 
         <section class="welcome">
 
-            
             <div class="wrapper">
             
                 <h2 class="sectionHeading">Welcome to Restaurant</h2>
          
                 <div class="textBlock">
                     <p class="textBlock__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam error dolorem, sapiente nulla id tempore exercitationem qui quae explicabo molestias porro provident totam. Recusandae modi consectetur maxime dolores cum nobis, eligendi</p>
-                    <button class="button">
+                    <button class="button button--grey">
                         <h4 class="button__text">View</h4>
                     </button>
                 </div>
@@ -166,7 +175,7 @@
         </section> <!-- services ENDS -->
 
         <section class="reviews">
-            <h2 class="sectionHeading sectionHeading--white">Reviews</h2>
+            <h2 class="sectionHeading sectionHeading--grey">Reviews</h2>
             <div class="wrapper">
 
             
@@ -176,8 +185,8 @@
                 <i class="reviewsArrow fas fa-angle-right"></i>
             </div>
             <div class="textBlock">
-                <p class="textBlock__content--small textBlock__content--white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit tempora quis deleniti nulla alias iste cumque odit quam, itaque libero.</p>
-                <p class="textBlock__content--small textBlock__content--white textBlock__content--italic">J. Michels</p>
+                <p class="textBlock__content--small textBlock__content--grey">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit tempora quis deleniti nulla alias iste cumque odit quam, itaque libero.</p>
+                <p class="textBlock__content--small textBlock__content--grey textBlock__content--italic">J. Michels</p>
             </div>
 
             </div>

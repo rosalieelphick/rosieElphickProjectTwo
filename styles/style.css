@@ -134,7 +134,9 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 
 html {
   font-size: 55%;
-  font-family: "Raleway", sans-serif; }
+  font-family: "Raleway", sans-serif;
+  color: #2a2a2a;
+  font-weight: 400; }
 
 img {
   display: block;
@@ -157,16 +159,26 @@ section {
 
 .sectionHeading {
   font-size: 4rem;
+  font-weight: 600;
   text-transform: uppercase;
-  margin: 0;
+  margin-bottom: 50px;
   text-align: center;
-  width: 100%; }
+  width: 100%;
+  padding: 0;
+  margin: 0; }
 
 .sectionHeading--white {
   color: white; }
 
+.sectionHeading--grey {
+  color: #d2cfcf; }
+
+.sectionHeading--noMargin {
+  margin: 0; }
+
 .subheading {
   font-size: 2.6rem;
+  font-weight: 600;
   text-transform: uppercase;
   margin: 0;
   text-align: center;
@@ -180,21 +192,51 @@ section {
 
 .button {
   border: none;
-  background-color: tomato;
+  background-color: #da331d;
   border-radius: 40px;
   display: inline;
-  width: 20rem; }
+  width: 20rem;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+  border: solid 2px #da331d; }
+  .button:hover {
+    border: solid 2px #2a2a2a;
+    -webkit-box-shadow: inset 0px 0px 10px 1px #c02713;
+    box-shadow: inset 0px 0px 10px 1px #c02713; }
+    .button:hover > .button__text {
+      font-weight: 600;
+      letter-spacing: 2px; }
+
+.button--grey {
+  background-color: #2a2a2a;
+  border: solid 2px #2a2a2a; }
+  .button--grey:hover {
+    border: solid 2px white;
+    -webkit-box-shadow: inset 0px 0px 12px 1px black;
+    box-shadow: inset 0px 0px 12px 1px black; }
+    .button--grey:hover > .button__text {
+      font-weight: 600;
+      letter-spacing: 2px; }
+
+.button--whiteBorder:hover {
+  border: solid 2px white;
+  -webkit-box-shadow: inset 0px 0px 10px 1px #c02713;
+  box-shadow: inset 0px 0px 10px 1px #c02713; }
 
 .button__text {
   font-size: 2rem;
+  font-weight: 400;
   text-transform: uppercase;
   padding: 1rem 3rem;
   margin: 0;
-  color: white; }
+  color: white;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s; }
 
 .textBlock {
-  text-align: center;
-  padding: 30px; }
+  text-align: center; }
 
 .textBlock__content {
   font-family: "Lora", serif;
@@ -206,6 +248,9 @@ section {
 
 .textBlock__content--white {
   color: white; }
+
+.textBlock__content--grey {
+  color: #d2cfcf; }
 
 .header {
   background-image: url(../assets/image-1.jpeg);
@@ -252,7 +297,65 @@ section {
   font-size: 3rem;
   margin: 0 auto;
   display: none;
-  margin-top: 30px; }
+  margin-top: 30px;
+  width: 30px;
+  height: 30px;
+  position: relative; }
+
+.bar {
+  padding: 0;
+  width: 30px;
+  height: calc(10px / 3);
+  background-color: white;
+  display: block;
+  border-radius: 4px;
+  -webkit-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  position: absolute; }
+
+.bar1 {
+  top: 0; }
+
+.bar2,
+.bar3 {
+  top: 13.5px; }
+
+.bar3 {
+  right: 0; }
+
+.bar4 {
+  bottom: 0; }
+
+.checkbox--visuallyHidden:checked + .hamburgerLabel > .hamburger > .bar1 {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transform-origin: 5%;
+  -ms-transform-origin: 5%;
+  transform-origin: 5%;
+  width: 41px; }
+
+.checkbox--visuallyHidden:checked + .hamburgerLabel > .hamburger > .bar2 {
+  -webkit-transform: translateX(-40px);
+  -ms-transform: translateX(-40px);
+  transform: translateX(-40px);
+  background-color: transparent; }
+
+.checkbox--visuallyHidden:checked + .hamburgerLabel > .hamburger > .bar3 {
+  -webkit-transform: translateX(40px);
+  -ms-transform: translateX(40px);
+  transform: translateX(40px);
+  background-color: transparent; }
+
+.checkbox--visuallyHidden:checked + .hamburgerLabel > .hamburger > .bar4 {
+  -webkit-transform-origin: 5%;
+  -ms-transform-origin: 5%;
+  transform-origin: 5%;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  width: 41px; }
 
 .navBar {
   display: -webkit-box;
@@ -267,11 +370,37 @@ section {
   list-style-type: none;
   padding: 0 10px; }
 
+.navBar__link:before,
+.navBar__link:after {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border: solid 0.5px transparent;
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  -webkit-transition: all 280ms ease-in-out;
+  -o-transition: all 280ms ease-in-out;
+  transition: all 280ms ease-in-out;
+  width: 0; }
+
+.navBar__link:hover:before,
+.navBar__link:hover:after {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-color: white;
+  width: 90%; }
+
 .navBar__link {
   font-size: 2rem;
   text-transform: uppercase;
   text-decoration: none;
-  color: white; }
+  color: white;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+  .navBar__link:hover {
+    font-weight: 600;
+    letter-spacing: 2px; }
 
 .welcomeMessage {
   display: -webkit-box;
@@ -323,15 +452,20 @@ section {
     flex-direction: column;
     max-height: 0;
     overflow: hidden;
-    -webkit-transition: all 0.7s ease;
-    -o-transition: all 0.7s ease;
-    transition: all 0.7s ease; }
+    -webkit-transition: all 0.7s ease-in-out;
+    -o-transition: all 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out; }
   .navBar__item {
     margin-bottom: 20px; }
   .hamburger {
     display: block; }
-  .checkbox--visuallyHidden:checked + .navBar {
-    max-height: 200px; } }
+  .checkbox--visuallyHidden:checked ~ .navBar {
+    max-height: 200px; }
+  .navBar__link:hover {
+    letter-spacing: 2px; }
+  .navBar__link:hover:before,
+  .navBar__link:hover:after {
+    width: 50%; } }
 
 .identityContainer {
   display: -webkit-box;
@@ -364,7 +498,7 @@ section {
   display: flex; }
 
 .welcome {
-  background-color: lightgrey; }
+  background-color: #e5bf4b; }
 
 .serviceType {
   display: -webkit-box;
@@ -514,7 +648,8 @@ section {
   text-align: center;
   width: 100%;
   border: 0;
-  border-bottom: solid 1px grey; }
+  border-bottom: solid 1px grey;
+  margin-bottom: 30px; }
 
 @media (max-width: 900px) {
   .sampleEvent__panel {
@@ -537,7 +672,7 @@ section {
   display: none; }
 
 .stats {
-  background-color: lightgrey; }
+  background-color: #e5bf4b; }
 
 .stat {
   -ms-flex-preferred-size: 25%;
