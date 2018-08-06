@@ -50,6 +50,7 @@ section {
     text-transform: uppercase;
     margin: 0;
     text-align: center;
+    margin: 10px 0;
 }
 
 .subheading--white {
@@ -58,6 +59,14 @@ section {
 
 .subheading--leftAlign {
     text-align: left;
+}
+
+.button {
+    border: none;
+    background-color: tomato;
+    border-radius: 40px;
+    display: inline;
+    width: 20rem;
 }
 
 // h4
@@ -84,6 +93,11 @@ section {
 .textBlock__content--small {
     font-family: $serifFont;
     font-size: 1.8rem;
+}
+
+//
+.textBlock__content--white {
+    color: white;
 }
 
 

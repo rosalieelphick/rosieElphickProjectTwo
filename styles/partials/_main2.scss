@@ -1,3 +1,38 @@
+// REVIEWS
+
+.reviews {
+    background-color: darkslategray;
+    padding-right: 15%;
+    padding-left: 15%;
+}
+
+.textBlock__content--italic {
+    font-style: italic;
+}
+
+.textBlock__content--italic::before {
+    content: "~ ";
+}
+
+.textBlock__content--italic::after {
+    content: " ~";
+}
+
+.reviews__photoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+}
+.reviews__photo {
+    width: 100px;
+    margin: 0 20px;
+}
+
+.reviewsArrow {
+    color: white;
+    font-size: 3rem;
+}
 
 // EVENTS
 
@@ -8,11 +43,37 @@
 
 .sampleEvent__panel {
     flex-basis: 33.33%;
+    position: relative;
 }
 
 .sampleEvent__img {
     height: 100%;
 }
+
+.sampleEvent__panelText {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    width: 80%;
+    left: 10%;
+    opacity: 0;
+    z-index: 10;
+    transition: all 0.3s;
+}
+
+.sampleEvent__panel:hover > .sampleEvent__img {
+    filter: brightness(0.5);
+}
+
+.sampleEvent__panel:hover > .sampleEvent__panelText {
+    opacity: 1;
+}
+
+
 
 // ASK
 
