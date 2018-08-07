@@ -11,6 +11,7 @@
 
 .stats {
     background-color: $yellow;
+    padding-top: 50px;
 }
 
 .stat {
@@ -92,41 +93,20 @@
     .stat__icon {
         font-size: 2rem;
     }
-
-    // BLOG
-
-    // .blogPost {
-    //     flex-basis: 500px;
-    //     margin: 0 auto;
-    // }
-
-    // .blogPostContainer {
-    //     width: 60%;
-    //     margin: 0 auto;
-    // }
-
-    // .blogPost__image {
-    //     width: 50%;
-    //     float: left;
-    // }
-
-    // .blogPost__title,
-    // .blogPost__link {
-    //     width: 50%;
-    //     float: left;
-    //     padding-left: 10px;
-    // }
-
-    // .blogPost__image--floatRight {
-    //     float: right;
-    // }
-
-    // .blogPost__title--floatRight,
-    // .blogPost__link--floatRight {
-    //     float: right;
-    //     width: 50%;
-    //     text-align: right;
-    //     padding-right: 10px;
-    // }
-
 }
+
+@media (max-width: 650px) {
+    .blogPost {
+        flex-basis: 100%;
+        padding: 10px 60px;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .blogPost {
+        flex-basis: 100%;
+        padding: 10px 0;
+    }
+}
+

@@ -6,8 +6,7 @@ $buttonRed: #da331d;
 $textGrey: #d2cfcf;
 
 html {
-    // font-size: 62.5%;
-    font-size: 55%;
+    font-size: 45%;
     font-family: $baseFont;
     color: $darkGrey;
     font-weight: 400;
@@ -19,13 +18,12 @@ img {
 }
 
 .wrapper {
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
     height: 100%;
 }
 
 section {
-    padding-top: 50px;
     padding-bottom: 50px;
 }
 
@@ -35,6 +33,8 @@ section {
     text-transform: uppercase;
     color: white;
     margin: 0;
+    font-weight: 600;
+    line-height: 1;
 }
 
 // h2
@@ -45,8 +45,8 @@ section {
     margin-bottom: 50px;
     text-align: center;
     width: 100%;
-    padding: 0;
     margin: 0;
+    padding: 50px 0;
 }
 
 .sectionHeading--white {
@@ -57,13 +57,13 @@ section {
     color: $textGrey;
 }
 
-.sectionHeading--noMargin {
-    margin: 0;
+.sectionHeading--noPadding {
+    padding: 0;
 }
 
 // h3 
 .subheading {
-    font-size: 2.6rem;
+    font-size: 2.4rem;
     font-weight: 600;
     text-transform: uppercase;
     margin: 0;
@@ -130,22 +130,25 @@ section {
 
 .textBlock {
     text-align: center;
-    // padding: 30px;
+    padding: 0px 35px;
+    line-height: 1.5;
 }
 
 // p
 .textBlock__content{
     font-family: $serifFont;
     font-size: 2.4rem;
+    line-height: 1.5;
 }
 
 // p
 .textBlock__content--small {
     font-family: $serifFont;
     font-size: 1.8rem;
+    line-height: 1.5;
 }
 
-//
+// p
 .textBlock__content--white {
     color: white;
 }

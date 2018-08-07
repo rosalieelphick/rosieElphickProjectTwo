@@ -1,6 +1,152 @@
 //FOOTER 
 
 .footer {
-    height: 250px;
-    background-color: darkslategrey;
+    background-color: $darkGrey;
+}
+
+.footerContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footerSection {
+    margin: 10px;
+    flex-basis: calc(33% - 20px);
+}
+
+.footerMenu {
+    flex-basis: 100%;
+}
+
+//CONTACT SECTIONS
+.contact__list {
+    padding-left: 0;
+}
+
+.contact__listItem {
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.contact__listIcon {
+    color: white;
+    font-size: 1.8rem;
+    margin-right: 5px;
+}
+
+.footerNav {
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footerNav__item {
+    text-align: center;
+    margin: 10px;
+}
+
+.footerNav__link {
+    color: white;
+}
+
+.textBlock__content--smallMargin {
+    margin: 5px;
+}
+
+//FOOTER FORM
+
+.footerForm {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border: solid 1px white;
+    margin-top: 10px;
+}
+
+.email {
+    width: 100%;
+    padding: 8px;
+    background-color: $darkGrey;  
+    color: white;
+    font-family: $serifFont;
+    font-size: 1.2rem;
+    border: none;
+
+}
+
+.emailSubmit {
+    background-color: $darkGrey;
+    background-image: url(../assets/plane.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 8px;
+    border: none;
+}
+
+//FOOTER TEXT
+
+//INSTAGRAM
+.instagram__gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.instagram__galleryImage {
+    margin: 5px;
+    flex-basis: 54px
+}
+
+@media (max-width: 690px) {
+    .footerSection__contact,
+    .footerSection__aboutFooter {
+        flex-basis: calc(50% - 20px);
+    }
+
+    .footerSection__instagram {
+        flex-basis: calc(100% - 20px);
+    }
+
+    .subheading--centerAlign {
+        text-align: center;
+    }
+
+    .instagram__gallery {
+        justify-content: space-around;
+    }
+
+}
+
+@media (max-width: 560px) {
+    .instagram__gallery {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .instagram__galleryImage {
+        margin: 10px;
+        flex-basis: calc(25% - 20px);
+    }
+}
+
+@media (max-width: 450px) {
+
+    .footerSection {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    .contact__listItem--centered {
+        justify-content: center;
+    }
+
+    .footerNav__item {
+        flex-basis: 100%;
+    }
+
+    .footerSection__instagram {
+        display: none;
+    }
+
 }
