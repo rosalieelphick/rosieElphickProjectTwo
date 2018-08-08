@@ -1,7 +1,6 @@
 // IDENTITY 
 .identityContainer {
-    display: flex;
-    flex-wrap: wrap;
+    @include flex(flex, no-wrap)
     height: 100%;
 }
 
@@ -10,14 +9,8 @@
     flex-basis: 50%;
 }
 
-.identityInfo {
-    display: flex;
-    align-items: center;
-}
-
 .identityGallery {
-    display: flex;
-    flex-wrap: wrap;
+    @include flex(flex, wrap);
 }
 
 .identityItem {
@@ -27,7 +20,7 @@
 }
 
 .identityItem__image {
-    display: flex;
+    @include flex(flex, nowrap);
     padding: 5%;
 }
 
@@ -38,8 +31,7 @@
 
 // SERVICES
 .serviceType {
-    display: flex;
-    flex-wrap: wrap;
+    @include flex(flex, wrap);
     align-items: center;
     flex-direction: row-reverse;
 }

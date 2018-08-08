@@ -6,8 +6,7 @@
 }
 
 .footerContainer {
-    display: flex;
-    flex-wrap: wrap;
+    @include flex(flex, wrap);
 }
 
 .footerSection {
@@ -39,8 +38,7 @@
 
 .footerNav {
     padding-left: 0;
-    display: flex;
-    flex-wrap: wrap;
+    @include flex(flex, wrap);
     justify-content: center;
 }
 
@@ -83,8 +81,7 @@
 
 //INSTAGRAM
 .instagram__gallery {
-    display: flex;
-    flex-wrap: wrap;
+    @include flex(flex, wrap);
 }
 
 .instagram__galleryImage {

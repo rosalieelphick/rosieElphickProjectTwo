@@ -142,21 +142,21 @@ img {
   display: block;
   width: 100%; }
 
+section {
+  padding-bottom: 50px; }
+
 .wrapper {
   width: 70%;
   height: 100%;
   max-width: 900px;
   margin: 0 auto; }
 
-section {
-  padding-bottom: 50px; }
-
 .heading {
   font-size: 5.8rem;
+  font-weight: 600;
   text-transform: uppercase;
   color: white;
   margin: 0;
-  font-weight: 600;
   line-height: 1; }
 
 .sectionHeading {
@@ -255,9 +255,9 @@ section {
 
 .copyrightText {
   font-size: 1.6rem;
-  color: white;
+  font-weight: 600;
   text-transform: uppercase;
-  font-weight: 600; }
+  color: white; }
 
 .header {
   background-image: url(../assets/image-1.jpeg);
@@ -395,9 +395,6 @@ section {
 .bar3 {
   top: 13.5px; }
 
-.bar3 {
-  right: 0; }
-
 .bar4 {
   bottom: 0; }
 
@@ -502,22 +499,14 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  -ms-flex-wrap: no-wrap;
+  flex-wrap: no-wrap;
   height: 100%; }
 
 .identityGallery,
 .identityInfo {
   -ms-flex-preferred-size: 50%;
   flex-basis: 50%; }
-
-.identityInfo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center; }
 
 .identityGallery {
   display: -webkit-box;
@@ -536,6 +525,8 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
   padding: 5%; }
 
 .welcome {
@@ -609,6 +600,8 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -785,10 +778,10 @@ section {
 
 .blogPost__link {
   font-size: 1.4rem;
+  font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
   color: #da331d;
-  font-weight: 600;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s; }
@@ -796,7 +789,7 @@ section {
     font-weight: 800;
     letter-spacing: 1.5px; }
   .blogPost__link:hover + .redUnderline {
-    width: 80%; }
+    width: 60%; }
   .blogPost__link::after {
     content: " >>"; }
 
@@ -806,7 +799,6 @@ section {
   height: 2px;
   background-color: #da331d;
   bottom: 0;
-  z-index: 10;
   position: absolute;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -825,6 +817,8 @@ section {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;

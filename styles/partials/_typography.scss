@@ -1,9 +1,21 @@
+// MIXINS AND VARIABLES
 $baseFont: 'Raleway', sans-serif;
 $serifFont: 'Lora', serif;
 $yellow: #e5bf4b;
 $darkGrey: #2a2a2a;
 $buttonRed: #da331d;
 $textGrey: #d2cfcf;
+
+@mixin fontVariables($fontSize, $fontWeight, $textTransform) {
+    font-size: $fontSize * 1rem;
+    font-weight: $fontWeight;
+    text-transform: $textTransform;
+}
+
+@mixin flex($flex, $wrap) {
+    display: $flex;
+    flex-wrap: $wrap;
+}
 
 html {
     font-size: 45%;
@@ -17,6 +29,10 @@ img {
     width: 100%;
 }
 
+section {
+    padding-bottom: 50px;
+}
+
 .wrapper {
     width: 70%;
     height: 100%;
@@ -24,25 +40,17 @@ img {
     margin: 0 auto;
 }
 
-section {
-    padding-bottom: 50px;
-}
-
 // h1 
 .heading {
-    font-size: 5.8rem;
-    text-transform: uppercase;
+    @include fontVariables(5.8, 600, uppercase);
     color: white;
     margin: 0;
-    font-weight: 600;
     line-height: 1;
 }
 
 // h2
 .sectionHeading {
-    font-size: 4rem;
-    font-weight: 600;
-    text-transform: uppercase;
+    @include fontVariables(4, 600, uppercase);
     text-align: center;
     width: 100%;
     margin: 0;
@@ -59,9 +67,7 @@ section {
 
 // h3 
 .subheading {
-    font-size: 2.4rem;
-    font-weight: 600;
-    text-transform: uppercase;
+    @include fontVariables(2.4, 600, uppercase);
     text-align: center;
     margin: 20px 0;
 }
@@ -113,9 +119,7 @@ section {
 
 // h4
 .button__text {
-    font-size: 2rem;
-    font-weight: 400;
-    text-transform: uppercase;
+    @include fontVariables(2, 400, uppercase);
     padding: 1rem 3rem;
     margin: 0;
     color: white;
@@ -153,10 +157,8 @@ section {
 
 // p 
 .copyrightText {
-    font-size: 1.6rem;
+    @include fontVariables(1.6, 600, uppercase);
     color: white;
-    text-transform: uppercase;
-    font-weight: 600;
 }
 
 

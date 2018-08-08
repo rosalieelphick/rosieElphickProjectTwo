@@ -18,7 +18,7 @@
 }
 
 .reviews__photoContainer {
-    display: flex;
+    @include flex(flex, nowrap);
     justify-content: center;
     align-items: center;
     padding: 0 10% 40px 10%;
@@ -45,8 +45,7 @@
 }
 
 .sampleEvent {
-    display: flex;
-    flex-wrap: wrap;
+    @include flex(flex, wrap);
 }
 
 .sampleEvent__panel {
@@ -68,8 +67,7 @@
 
 .sampleEvent__panelText {
     position: absolute;
-    display: flex;
-    flex-wrap: wrap;
+    @include flex(flex, wrap);
     justify-content: center;
     flex-direction: column;
     justify-content: center;
@@ -91,8 +89,7 @@
 // ASK
 .ask {
     text-align: center;
-    display: flex;
-    flex-wrap: wrap;
+    @include flex(flex, wrap);
     justify-content: center;
 }
 

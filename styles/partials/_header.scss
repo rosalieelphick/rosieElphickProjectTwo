@@ -14,8 +14,7 @@
 }
 
 .nav {
-    display: flex;
-    flex-wrap: wrap;
+    @include flex(flex, wrap);
     justify-content: space-between;
     flex-basis: 15%;
     margin-top: 20px;
@@ -114,10 +113,6 @@
 .bar2,
 .bar3 {
     top: 13.5px;
-}
-
-.bar3 {
-    right: 0;
 }
 
 .bar4 {
