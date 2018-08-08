@@ -1,22 +1,3 @@
-// MIXINS AND VARIABLES
-$baseFont: 'Raleway', sans-serif;
-$serifFont: 'Lora', serif;
-$yellow: #e5bf4b;
-$darkGrey: #2a2a2a;
-$buttonRed: #da331d;
-$textGrey: #d2cfcf;
-
-@mixin fontVariables($fontSize, $fontWeight, $textTransform) {
-    font-size: $fontSize * 1rem;
-    font-weight: $fontWeight;
-    text-transform: $textTransform;
-}
-
-@mixin flex($flex, $wrap) {
-    display: $flex;
-    flex-wrap: $wrap;
-}
-
 html {
     font-size: 45%;
     font-family: $baseFont;
