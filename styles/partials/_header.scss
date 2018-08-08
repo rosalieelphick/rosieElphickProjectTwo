@@ -26,6 +26,56 @@
     align-items: center;
 }
 
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+}
+
+.navBar__item {
+    list-style-type: none;
+    padding: 0 10px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.footerNav__link:before,
+.footerNav__link:after,
+.navBar__link:before,
+.navBar__link:after {
+    backface-visibility: hidden;
+    border: solid 0.5px transparent;
+    content: " ";
+    display: block;
+    margin: 0 auto;
+    transition: all 280ms ease-in-out;
+    width: 0;
+}
+
+.footerNav__link:hover:before,
+.footerNav__link:hover:after,
+.navBar__link:hover:before,
+.navBar__link:hover:after {
+    backface-visibility: hidden;
+    border-color: white;
+    width: 90%;
+}
+
+.navBar__link,
+.footerNav__link {
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+        font-weight: 600;
+        letter-spacing: 2px;
+    }
+}
+
+//HAMBURGER ANIMATION
 .checkbox--visuallyHidden,
 .emailLabel--visuallyHidden {
 	position: absolute; 
@@ -96,53 +146,6 @@
     width: 41px;
 }
 
-.navBar {
-    display: flex;
-    justify-content: space-between;
-    padding-left: 0;
-}
-
-.navBar__item {
-    list-style-type: none;
-    padding: 0 10px;
-    height: 100%;
-}
-
-.footerNav__link:before,
-.footerNav__link:after,
-.navBar__link:before,
-.navBar__link:after {
-    backface-visibility: hidden;
-    border: solid 0.5px transparent;
-    content: " ";
-    display: block;
-    margin: 0 auto;
-    transition: all 280ms ease-in-out;
-    width: 0;
-}
-
-.footerNav__link:hover:before,
-.footerNav__link:hover:after,
-.navBar__link:hover:before,
-.navBar__link:hover:after {
-    backface-visibility: hidden;
-    border-color: white;
-    width: 90%;
-}
-
-.navBar__link,
-.footerNav__link {
-    font-size: 2rem;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: white;
-    transition: all 0.3s ease-in-out;
-    &:hover {
-        font-weight: 600;
-        letter-spacing: 2px;
-    }
-}
-
 .welcomeMessage {
     display: flex;
     flex-direction: column;
@@ -205,6 +208,7 @@
 
     .navBar__item {
         margin-bottom: 20px;
+        display: block;
     }
 
     .hamburger {

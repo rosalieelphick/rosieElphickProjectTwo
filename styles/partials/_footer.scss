@@ -1,7 +1,8 @@
 //FOOTER 
-
 .footer {
     background-color: $darkGrey;
+    padding: 30px 0;
+    position: relative;
 }
 
 .footerContainer {
@@ -10,11 +11,12 @@
 }
 
 .footerSection {
-    margin: 10px;
-    flex-basis: calc(33% - 20px);
+    margin: 20px;
+    flex-basis: calc(33% - 40px);
 }
 
 .footerMenu {
+    padding: 50px 0;
     flex-basis: 100%;
 }
 
@@ -30,7 +32,7 @@
 }
 
 .contact__listIcon {
-    color: white;
+    color: $textGrey;
     font-size: 1.8rem;
     margin-right: 5px;
 }
@@ -47,21 +49,16 @@
     margin: 10px;
 }
 
-.footerNav__link {
-    color: white;
-}
-
 .textBlock__content--smallMargin {
     margin: 5px;
 }
 
 //FOOTER FORM
-
 .footerForm {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    border: solid 1px white;
+    border: solid 0.5px white;
     margin-top: 10px;
 }
 
@@ -73,7 +70,6 @@
     font-family: $serifFont;
     font-size: 1.2rem;
     border: none;
-
 }
 
 .emailSubmit {
@@ -85,8 +81,6 @@
     border: none;
 }
 
-//FOOTER TEXT
-
 //INSTAGRAM
 .instagram__gallery {
     display: flex;
@@ -94,14 +88,47 @@
 }
 
 .instagram__galleryImage {
-    margin: 5px;
-    flex-basis: 54px
+    margin: 3px;
+    flex: 0 1 49px;
+    transition: all 0.3s;
+    &:hover {
+        transform: scale(2);
+    }
+}
+
+// COPYRIGHT
+.footerCopyright {
+    flex-basis: 100%;
+    text-align: center;
+}
+
+//SOCIAL 
+.footerSocial {
+    color: $textGrey;
+    font-size: 2.5rem;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    right: 15px;
+    top: calc(50% - 50px);
+}
+
+.footerSocial__link {
+    color: inherit;
+    transition: all 0.3s;
+    &:hover {
+        font-size: 3.5rem;
+        color: white;
+    }
 }
 
 @media (max-width: 690px) {
     .footerSection__contact,
     .footerSection__aboutFooter {
-        flex-basis: calc(50% - 20px);
+        flex-basis: calc(50% - 40px);
+        padding-top: 20px;
     }
 
     .footerSection__instagram {
@@ -114,6 +141,13 @@
 
     .instagram__gallery {
         justify-content: space-around;
+    }
+
+    .footerSocial {
+        flex-direction: row;
+        width: 100px;
+        top: 20px;
+        left: calc(50% - 50px);
     }
 
 }

@@ -1,5 +1,4 @@
 // STATS
-
 .statsContainer {
     display: flex;
     flex-wrap: wrap;
@@ -35,29 +34,51 @@
 }
 
 //BLOG 
-
 .blogPostContainer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
 .blogPost {
     flex-basis: calc(33.33% - 10px);
+    padding-bottom: 10px;
+    position: relative;
 }
 
 .blogPost__title {
     font-size: 2rem;
+    font-weight: 600;
 }
 
 .blogPost__link {
     font-size: 1.4rem;
     text-transform: uppercase;
     text-decoration: none;
-    color: inherit;
+    color: $buttonRed;
+    font-weight: 600;
+    transition: all 0.3s;
+    &:hover {
+        font-weight: 800;
+        letter-spacing: 1.5px;
+    }
+    &:hover + .redUnderline {
+        width: 80%;
+    }
+    &::after {
+        content: " >>";
+    }
 }
 
-.blogPost__link::after {
-    content: " >>";
+.redUnderline {
+    width: 0px;
+    display: block;
+    height: 2px;
+    background-color: $buttonRed;
+    bottom: 0;
+    z-index: 10;
+    position: absolute;
+    transition: all 0.3s;
 }
 
 @media (max-width: 1000px) {

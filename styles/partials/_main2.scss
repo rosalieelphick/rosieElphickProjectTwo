@@ -1,7 +1,6 @@
 // REVIEWS
-
 .reviews {
-    background-color: darkslategray;
+    background-color: $darkGrey;
     padding-right: 15%;
     padding-left: 15%;
 }
@@ -22,8 +21,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 10%;
+    padding: 0 10% 40px 10%;
 }
+
 .reviews__photo {
     width: 100px;
     margin: 0 20px;
@@ -32,6 +32,10 @@
 .reviewsArrow {
     color: white;
     font-size: 3rem;
+    transition: all 0.3s;
+    &:hover {
+        color: $textGrey;
+    }
 }
 
 // EVENTS
@@ -48,6 +52,13 @@
 .sampleEvent__panel {
     flex-basis: 33.33%;
     position: relative;
+    &:hover > .sampleEvent__img {
+        filter: brightness(0.5);
+    }
+    &:hover > .sampleEvent__panelText {
+        opacity: 1;
+    }
+
 }
 
 .sampleEvent__img {
@@ -71,16 +82,13 @@
     transition: all 0.3s;
 }
 
-.sampleEvent__panel:hover > .sampleEvent__img {
-    filter: brightness(0.5);
-}
-
-.sampleEvent__panel:hover > .sampleEvent__panelText {
-    opacity: 1;
+.subheading--underline {
+    border-bottom: solid 1px white;
+    margin: 0 15%;
+    padding-bottom: 10px;
 }
 
 // ASK
-
 .ask {
     text-align: center;
     display: flex;
@@ -93,7 +101,7 @@
     margin: 0 10px;
 }
 
-#message {
+.message {
     font-family: $serifFont;
     font-size: 2rem;
     text-align: center;
@@ -101,6 +109,7 @@
     border: 0;
     border-bottom: solid 1px grey;
     margin-bottom: 30px;
+    padding-bottom: 10px;
 }
 
 @media (max-width: 900px) {
